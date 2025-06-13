@@ -76,6 +76,10 @@ function Preloader() {
   this.initMainApp = function() {
     var marioMakerInstance = MarioMaker.getInstance();
     marioMakerInstance.init();
+    
+    // Initialize the dynamic start screen after the main app is loaded
+    var dynamicStartScreen = DynamicStartScreen.getInstance();
+    dynamicStartScreen.init();
   };
 }
 

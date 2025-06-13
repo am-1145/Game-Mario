@@ -31,7 +31,7 @@ A classic Mario game with a built-in Level Editor made using **pure JavaScript a
    - Simply open `Game-mario/index.html` in your web browser
    - OR use a local server for better performance:
      ```
-     cd mario-maker
+     cd Game-mario
      python -m http.server  # Python 3
      ```
      Then visit `http://localhost:8000` in your browser

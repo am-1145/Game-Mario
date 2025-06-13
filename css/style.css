@@ -8,8 +8,9 @@
   height: 530px;
   margin: 0 auto;
   border: 1px solid black;
-  background: url('../images/start-screen.png');
+  background: url('../images/start-screen2.png');
   position: relative;
+  background-color: #000;
 }
 
 .editor-screen {
@@ -53,10 +54,11 @@
   border: 1px solid black;
   border-bottom: none;
   line-height: 50px;
-  font-size: 20px;
-  background-color: #add1f3;
+  font-size: 22px;
+  background-color: #3498db;
   font-family: SuperMario256;
-  color: #ffffff;
+  color: #ffdd00;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .life-count {
@@ -81,6 +83,7 @@
 .total-score {
   float: left;
 }
+
 .cell {
   width: 31px;
   height: 31px;
@@ -269,12 +272,15 @@
 .start-btn {
   width: 200px;
   height: 50px;
-  color: #ffffff;
+  color: #ffcc00;
   background: url('../images/start-btn.png');
   position: absolute;
   bottom: 100px;
   left: 252px;
   border: 2px solid black;
+  font-family: 'SuperMario256', sans-serif;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .editor-btn {
@@ -284,8 +290,11 @@
   position: absolute;
   bottom: 100px;
   left: 530px;
-  color: #ffffff;
+  color: #ff6633;
   border: 2px solid black;
+  font-family: 'SuperMario256', sans-serif;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .created-btn {
@@ -295,8 +304,11 @@
   position: absolute;
   bottom: 100px;
   left: 810px;
-  color: #ffffff;
+  color: #66ff66;
   border: 2px solid black;
+  font-family: 'SuperMario256', sans-serif;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .back-btn {
@@ -317,12 +329,14 @@
   text-align: center;
   width: 248px;
   height: 50px;
-  color: #ffffff;
+  color: #ffdd00;
   border: 2px solid black;
   margin: 2px;
   text-transform: uppercase;
   font-weight: bold;
-  background: #15a7d9;
+  background: #e74c3c;
+  text-shadow: 1px 1px 3px #000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .delete-all-btn {
@@ -347,11 +361,14 @@
   width: 1000px;
   text-align: center;
   font-family: SuperMario256;
-  font-size: 25px;
+  font-size: 26px;
   margin: 0 auto;
-  color: #ffffff;
-  background: #5fb952;
+  color: #ffdd00;
+  background: #27ae60;
   border: 2px solid black;
+  text-shadow: 2px 2px 2px #000;
+  padding: 10px 0;
+  border-radius: 5px;
 }
 
 .loading-percentage {

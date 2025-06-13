@@ -56,8 +56,11 @@ var GameUI = (function() {
     };
 
     this.writeText = function(text, x, y) {
-      ctx.font = '20px SuperMario256';
-      ctx.fillStyle = 'white';
+      ctx.font = '22px SuperMario256';
+      ctx.fillStyle = '#ffcc00';
+      ctx.strokeStyle = '#000000';
+      ctx.lineWidth = 2;
+      ctx.strokeText(text, x, y);
       ctx.fillText(text, x, y);
     };
   }

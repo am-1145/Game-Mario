@@ -1,0 +1,179 @@
+/* Dynamic Start Screen Styles */
+
+@keyframes titleBounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes cloudFloat {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes buttonPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.dynamic-start-screen {
+  width: 1280px;
+  height: 530px;
+  margin: 0 auto;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #5c94fc, #9dc1fb);
+}
+
+.title-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.mario-title {
+  font-family: SuperMario256;
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 
+    0 0 10px rgba(255,255,255,0.8),
+    5px 5px 0 #ff0000,
+    -5px -5px 0 #ffcc00,
+    5px -5px 0 #00cc00,
+    -5px 5px 0 #3333ff;
+  letter-spacing: 5px;
+  transform-origin: center;
+}
+
+.mario-title.animate {
+  animation: titleBounce 2s infinite ease-in-out;
+}
+
+.dynamic-start-btn,
+.dynamic-editor-btn,
+.dynamic-created-btn {
+  position: absolute;
+  width: 220px;
+  height: 60px;
+  border: 4px solid #ffffff;
+  border-radius: 30px;
+  font-family: SuperMario256;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.3);
+}
+
+.dynamic-start-btn {
+  left: 200px;
+  bottom: 150px;
+  background: linear-gradient(to bottom, #ff5252, #d32f2f);
+  color: #ffffff;
+  animation: buttonPulse 2s infinite ease-in-out;
+}
+
+.dynamic-editor-btn {
+  left: 530px;
+  bottom: 150px;
+  background: linear-gradient(to bottom, #ffeb3b, #fbc02d);
+  color: #333333;
+}
+
+.dynamic-created-btn {
+  left: 860px;
+  bottom: 150px;
+  background: linear-gradient(to bottom, #4caf50, #2e7d32);
+  color: #ffffff;
+}
+
+.dynamic-start-btn:hover,
+.dynamic-editor-btn:hover,
+.dynamic-created-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 11px 0 rgba(0,0,0,0.3);
+}
+
+.dynamic-start-btn:active,
+.dynamic-editor-btn:active,
+.dynamic-created-btn:active {
+  transform: translateY(5px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+.cloud-left,
+.cloud-right {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.cloud-left:before,
+.cloud-left:after,
+.cloud-right:before,
+.cloud-right:after {
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.cloud-left:before,
+.cloud-right:before {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 30px;
+}
+
+.cloud-left:after,
+.cloud-right:after {
+  width: 80px;
+  height: 80px;
+  top: -30px;
+  right: 30px;
+}
+
+.cloud-left {
+  top: 80px;
+  left: 100px;
+  animation: cloudFloat 8s infinite ease-in-out;
+}
+
+.cloud-right {
+  top: 150px;
+  right: 100px;
+  animation: cloudFloat 10s infinite ease-in-out reverse;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, #8B4513, #654321);
+  border-top: 5px solid #8B6914;
+}
+
+.ground:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: repeating-linear-gradient(
+    to right,
+    #8B4513,
+    #8B4513 30px,
+    #654321 30px,
+    #654321 60px
+  );
+}

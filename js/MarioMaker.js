@@ -124,14 +124,32 @@ var MarioMaker = (function() {
       that.showMainMenu();
 
       view.style(backToMenuBtn, { display: 'none' });
+      
+      // Show dynamic start screen if it exists
+      var dynamicStartScreen = DynamicStartScreen.getInstance();
+      if (dynamicStartScreen) {
+        dynamicStartScreen.show();
+      }
     };
 
     this.hideMainMenu = function() {
       view.style(startScreen, { display: 'none' });
+      
+      // Hide dynamic start screen if it exists
+      var dynamicStartScreen = DynamicStartScreen.getInstance();
+      if (dynamicStartScreen) {
+        dynamicStartScreen.hide();
+      }
     };
 
     this.showMainMenu = function() {
-      view.style(startScreen, { display: 'block' });
+      view.style(startScreen, { display: 'none' }); // Hide original start screen
+      
+      // Show dynamic start screen if it exists
+      var dynamicStartScreen = DynamicStartScreen.getInstance();
+      if (dynamicStartScreen) {
+        dynamicStartScreen.show();
+      }
     };
   }
 
