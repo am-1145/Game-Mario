@@ -22,11 +22,13 @@ A classic Mario game with a built-in Level Editor made using **pure JavaScript a
 ### Installation
 
 1. **Download the game:**
-   - Clone this repository: `git clone [repository-url]`
+
+   - Clone this repository: `git clone https://github.com/am-1145/Game-Mario.git`
    - OR download and extract the ZIP file
 
 2. **Run the game:**
-   - Simply open `mario-maker/index.html` in your web browser
+
+   - Simply open `Game-mario/index.html` in your web browser
    - OR use a local server for better performance:
      ```
      cd mario-maker
@@ -41,13 +43,13 @@ A classic Mario game with a built-in Level Editor made using **pure JavaScript a
 
 ### Game Controls
 
-| Action | Keyboard | Touch |
-|--------|----------|-------|
-| Move Left | ← (Left Arrow) | Left side of screen |
-| Move Right | → (Right Arrow) | Right side of screen |
-| Jump | ↑ (Up Arrow) or Space | Right side of screen |
-| Sprint | Shift | Middle of screen |
-| Fire (when powered up) | Ctrl | Middle of screen |
+| Action                 | Keyboard              | Touch                |
+| ---------------------- | --------------------- | -------------------- |
+| Move Left              | ← (Left Arrow)        | Left side of screen  |
+| Move Right             | → (Right Arrow)       | Right side of screen |
+| Jump                   | ↑ (Up Arrow) or Space | Right side of screen |
+| Sprint                 | Shift                 | Middle of screen     |
+| Fire (when powered up) | Ctrl                  | Middle of screen     |
 
 ### Power-ups
 
@@ -95,19 +97,10 @@ A classic Mario game with a built-in Level Editor made using **pure JavaScript a
 ## 🔧 Modifications
 
 Recent modifications to the game:
+
 - Adjusted Mario's movement speed for better control
 - Increased jump height to clear obstacles more easily
 - Added fullscreen functionality
 - Fixed collision detection issues
-
-## 📝 Credits
-
-Original game by Pratish Shrestha
-
-## 📜 License
-
-This project is open source and available for personal and educational use.
-
----
 
 Enjoy the game! 🍄👾
